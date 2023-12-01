@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(233, 253, 143, 0.75), rgb(218, 248, 107)),
+    url("img/escudodelecuador.png");
+}
+
+#imagenGabela{
+    background-image: linear-gradient(rgba(154, 227, 241, 0.75), rgb(250, 251, 252)),
+    url("img/imagenfondo.jpg");
+}
+
+/*MENU*/
+
+#menu  {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+
+#menu button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Modificación de las imagenes tamaños, etc.*/
+/*max-height: 39rem;...altura de la imagen*/
+.carousel-inner{
+    max-height: 39rem;
+}
+
+/*Para pantalla media*/
+
+/*!important...es un modificador que se puede usar para dar prioridad y anular cualquier estilo*/
+@media (max-width:768px){
+    #intro {
+        width: 90% !important;
+    }
+
+    .servicio-fila{
+        width: 100% !important;
+
+    }
+}
+
+/*Para pantalla pequeña*/
+@media (max-width: 576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+/*Mapa*/
+
+.mapa{
+    width: 100%;
+    height: 500%;
+}
+
+/*IMPORTANTE...Aqui modifico el tamaño del footer en el local*/
+#local {
+    background: white;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+/*Estlo para pantalla ancha*/
+
+@media (max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 90px;
+    }
+}
+
+/*Importante para la generación del footer*/
+#numeros-local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+/*Me permite generar lineas verticales color negro*/
+#numeros-local div:not(:last-child){
+    border-right: 2px solid black;
+}
+
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+
+#numeros-local p{
+    margin: 0;
+}
+
+
+/*
+.footer {
+    font-size: 14px;
+}
+*/
+
+
+#color-letras{
+    color: white;
+}
+
+.fluorescent-text {
+    color: #ff0000; /* Color verde fosforescente */
+    text-shadow: 0 0 5px #00ff00; /* Sombra verde fosforescente */
+  }
+  
